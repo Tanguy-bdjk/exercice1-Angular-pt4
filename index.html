@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+  <title>Exercice 1</title>
+</head>
+<body>
+  <div>
+    <button type="button" name="plus" ng-click="count = count + 1" ng-init="count = 0">+</button>
+    <!-- le ng-init sert à mettre un 0 de base au chargement de la page dans l'input -->
+    <button type="button" name="moins" ng-click="count = count - 1" ng-init="count = 0">-</button>
+    <!-- <input type="text" readonly value="{{count}}"> -->
+    <p> total : {{count}}</p>
+  </div>
+</body>
+</html>
